@@ -1,0 +1,15 @@
+<!-- author box starts -->
+<div class="author-box row">
+	<figure class="author-gravatar columns medium-4">
+		<img ng-src="{{userListing.userInfo.quiescent_avatar_url}}" alt="{{userListing.userInfo.name}}">
+	</figure>
+	<div class="author-info columns">
+		<h2 class="author-title">About {{userListing.userInfo.name}}</h2>
+		<p>{{userListing.userInfo.description}}</p>
+	</div>
+</div>
+<!-- author box ends -->
+
+<h2>Posts by {{userListing.userInfo.name}}</h2>
+
+<post-listing post-args="{author: userListing.userId}"></post-listing>

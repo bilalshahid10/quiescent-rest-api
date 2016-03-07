@@ -1,0 +1,16 @@
+<!-- post listing starts -->
+<article class="post-entry">
+	<h2 class="post-title"><a ng-href="#/posts/{{singlePost.post.slug}}">{{singlePost.post.title.rendered}}</a></h2>
+	<figure class="post-thumbnail" ng-show="singlePost.post.quiescent_featured_image">
+		<img ng-src="{{singlePost.post.quiescent_featured_image}}" alt="Featured Image">
+	</figure>
+	<p class="post-meta">
+		By <a ng-href="#/users/{{singlePost.post.author}}">{{singlePost.post.quiescent_author_name}}</a> 
+		in <a ng-href="#/categories/{{category.term_id}}" ng-repeat="category in singlePost.post.quiescent_categories">{{category.name}}{{$last ? '' : ',&nbsp;'}}</a>
+	</p>
+	<div class="post-content" ng-bind-html="singlePost.post.content.rendered"></div>
+	<p class="back-to-listing">
+		<button class="button" onclick="window.history.back()">Back to posts listing</button>
+	</p>
+</article>
+<!-- post listing ends -->

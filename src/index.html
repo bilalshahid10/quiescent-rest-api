@@ -1,0 +1,40 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app="quiescentApp">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiescent | A Simple Theme Powered by WP REST API and AngularJS</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+
+	<!-- header starts -->
+    <header class="page-header row">
+    	<div class="medium-12 columns">
+    		<h1 class="header-logo" id="header-logo">
+	    		<a href="#/posts"><img src="img/logo.svg" alt="Quiescent"></a>
+	    	</h1>
+    	</div>
+    </header>
+    <!-- header ends -->
+
+
+    <div class="main row">
+    	<div class="columns medium-8" ng-view autoscroll="true">
+    		
+    	</div>
+    </div>
+
+	<!-- footer starts -->
+	<footer class="page-footer">
+		<p>Quiscent theme created for Tuts+</p>
+	</footer>
+	<!-- footer ends -->
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
